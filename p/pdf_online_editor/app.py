@@ -77,7 +77,7 @@ def main():
         selected_page -= 1
 
         # Display image
-        images = convert_from_bytes(pdf_file.getvalue(), poppler_path=r"C:\poppler\Library\bin")
+        images = convert_from_bytes(pdf_file.getvalue())
         image = images[selected_page]
 
         col1, col2 = st.columns(2)
